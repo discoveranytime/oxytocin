@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("oxytocin-theme");if(_t==="light"||_t==="dark")d
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#fbcfe8; --sky-deep:#be185d;
-  --teal:#fbcfe8; --teal-deep:#831843;
-  --org:#be185d; --org-deep:#831843;
-  --amber:#fbbf24; --rose:#f65d73; --cyan:#fbcfe8;
+  --sky:#fb7185; --sky-deep:#f50729;
+  --teal:#fb7185; --teal-deep:#f50729;
+  --org:#38bdf8; --org-deep:#0782b9;
+  --amber:#fb7185; --rose:#38bdf8; --cyan:#fb7185;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#fbcfe8 5%,#be185d 50%,#fbcfe8 95%);
+  --grad:linear-gradient(100deg,#fbcfd5 5%,#188bbe 50%,#fbcfd5 95%);
   --ongrad:#0a0c14;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(190, 24, 93,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(131, 24, 67,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(131, 24, 67,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(251, 207, 232,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(24,139,190,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(131,24,39,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(131,24,39,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(251,207,213,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(190, 24, 93,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(131, 24, 67,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(131, 24, 67,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(24,139,190,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(131,24,39,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(131,24,39,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#be185d; --sky-deep:#831843;
-  --teal:#831843; --teal-deep:#831843;
-  --org:#be185d; --org-deep:#831843;
-  --amber:#b45309; --rose:#c52044; --cyan:#831843;
+  --sky:#f90d2f; --sky-deep:#920418;
+  --teal:#058ac5; --teal-deep:#023d58;
+  --org:#f90d2f; --org-deep:#920418;
+  --amber:#f90d2f; --rose:#058ac5; --cyan:#058ac5;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#be185d,#831843,#be185d);
+  --grad:linear-gradient(100deg,#be1830,#186283,#be1830);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,12 +129,12 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
-.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(251,191,36,.6);animation:pulse 2.2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(251,191,36,.55)}70%{box-shadow:0 0 0 12px rgba(251,191,36,0)}100%{box-shadow:0 0 0 0 rgba(251,191,36,0)}}
+.badge .dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(249,38,68,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(249,38,68,.55)}70%{box-shadow:0 0 0 12px rgba(249,38,68,0)}100%{box-shadow:0 0 0 0 rgba(249,38,68,0)}}
 .hero h1{font-family:var(--disp);font-weight:900;letter-spacing:-.03em;line-height:1.02;font-size:clamp(2.4rem,7.5vw,4.8rem);margin-bottom:1.1rem}
 .hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
   background-size:200% auto;animation:sheen 9s ease-in-out infinite}
@@ -187,11 +187,11 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
 .kv .k.t{background:rgba(94,234,212,.10);color:var(--teal);border:1px solid rgba(94,234,212,.35)}
-.kv .k.o{background:rgba(251,146,60,.12);color:var(--org);border:1px solid rgba(251,146,60,.35)}
-.kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(246, 93, 115,.12);color:var(--rose);border:1px solid rgba(246, 93, 115,.35)}
+.kv .k.o{background:rgba(250,61,88,.12);color:var(--org);border:1px solid rgba(250,61,88,.35)}
+.kv .k.a{background:rgba(249,38,68,.12);color:var(--amber);border:1px solid rgba(249,38,68,.35)}
+.kv .k.g{background:rgba(93,199,246,.12);color:var(--rose);border:1px solid rgba(93,199,246,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(204, 81, 17,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(204,17,44,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -208,14 +208,14 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
 .anec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden}
 .anec::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
 .anec .stamp{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;
-  color:var(--amber);border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.08);
+  color:var(--amber);border:1px solid rgba(249,38,68,.4);background:rgba(249,38,68,.08);
   padding:.28rem .6rem;border-radius:7px;text-transform:uppercase;margin-bottom:.65rem}
 .anec h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .anec-head{display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem}
@@ -231,7 +231,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .anec p{color:var(--muted);font-size:.95rem}
 .anec p strong{color:var(--ink)}
 .anec .caveat{margin-top:.8rem;font-size:.82rem;color:var(--faint);border-top:1px dashed var(--line);padding-top:.7rem}
-.folk-note{background:rgba(251,191,36,.06);border:1px solid rgba(251,191,36,.3);border-radius:var(--radius);
+.folk-note{background:rgba(249,38,68,.06);border:1px solid rgba(249,38,68,.3);border-radius:var(--radius);
   padding:1.2rem 1.4rem;margin-bottom:1.6rem;color:var(--muted);font-size:.98rem}
 .folk-note strong{color:var(--amber)}
 .safety-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
@@ -242,9 +242,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard h4{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
-.lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
-.lvl-theory .level{background:rgba(251,146,60,.1);color:var(--org);border:1px solid rgba(251,146,60,.4)}
-.lvl-unknown .level{background:rgba(246, 93, 115,.1);color:var(--rose);border:1px solid rgba(246, 93, 115,.4)}
+.lvl-known .level{background:rgba(249,38,68,.1);color:var(--amber);border:1px solid rgba(249,38,68,.4)}
+.lvl-theory .level{background:rgba(250,61,88,.1);color:var(--org);border:1px solid rgba(250,61,88,.4)}
+.lvl-unknown .level{background:rgba(93,199,246,.1);color:var(--rose);border:1px solid rgba(93,199,246,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -265,10 +265,10 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
+
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -281,7 +281,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(246, 93, 115,.05);border:1px solid rgba(246, 93, 115,.3);border-radius:var(--radius);
+.limits{background:rgba(93,199,246,.05);border:1px solid rgba(93,199,246,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -348,7 +348,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fbcfe8), var(--mpc2, #fbcfe8)) border-box;
+    linear-gradient(135deg, var(--mpc1, #fbcfd5), var(--mpc2, #fbcfd5)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -360,11 +360,11 @@ mini-poll { display: block; }
   color: var(--muted, #a9b1c9); font-size: .88rem;
 }
 .mpoll-teaser:hover { background: rgba(255,255,255,.03); }
-.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
+.mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #f92644); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fbcfe8);
-  box-shadow: 0 0 10px var(--mpc1, #fbcfe8);
+  background: var(--mpc1, #fbcfd5);
+  box-shadow: 0 0 10px var(--mpc1, #fbcfd5);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -398,7 +398,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fbcfe8), var(--acc2, #fbcfe8), var(--acc3, #be185d));
+  background: linear-gradient(100deg, var(--acc1, #fbcfd5), var(--acc2, #fbcfd5), var(--acc3, #188bbe));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -419,23 +419,23 @@ mini-poll { display: block; }
   background: rgba(255,255,255,.03); color: var(--ink, #edf0f9);
   font-size: .95rem; transition: border-color .15s, background .15s, transform .15s;
 }
-.mpoll-opt:hover { border-color: var(--amber, #fbbf24); background: rgba(255,255,255,.05); }
-.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: 2px; }
-.mpoll-opt.sel { border-color: var(--amber, #fbbf24); background: rgba(251,191,36,.10); }
+.mpoll-opt:hover { border-color: var(--amber, #f92644); background: rgba(255,255,255,.05); }
+.mpoll-opt:focus-visible { outline: 2px solid var(--amber, #f92644); outline-offset: 2px; }
+.mpoll-opt.sel { border-color: var(--amber, #f92644); background: rgba(249,38,68,.10); }
 .mpoll-emoji { font-size: 1.25rem; flex: 0 0 auto; }
 .mpoll-label { flex: 1; }
 .mpoll-vote, .mpoll-again {
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fbcfe8), var(--acc2, #fbcfe8));
+  background: linear-gradient(100deg, var(--acc1, #fbcfd5), var(--acc2, #fbcfd5));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
 .mpoll-vote:disabled { opacity: .45; cursor: not-allowed; transform: none; }
 .mpoll-note {
-  margin-top: .7rem; font-size: .88rem; color: #fbbf24;
-  border: 1px dashed rgba(251,191,36,.4); border-radius: 10px; padding: .6rem .8rem;
+  margin-top: .7rem; font-size: .88rem; color: #f92644;
+  border: 1px dashed rgba(249,38,68,.4); border-radius: 10px; padding: .6rem .8rem;
 }
 .mpoll-bars { display: grid; gap: .6rem; margin-top: .4rem; }
 .mpoll-rowtop {
@@ -443,17 +443,17 @@ mini-poll { display: block; }
   font-size: .9rem; color: var(--ink, #edf0f9); margin-bottom: .28rem;
 }
 .mpoll-pct { font-weight: 800; color: var(--muted, #a9b1c9); flex: 0 0 auto; }
-.mpoll-mine { color: var(--amber, #fbbf24); font-weight: 700; font-size: .8rem; }
+.mpoll-mine { color: var(--amber, #f92644); font-weight: 700; font-size: .8rem; }
 .mpoll-track {
   height: 10px; border-radius: 999px; overflow: hidden;
   background: rgba(255,255,255,.07);
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fbcfe8), var(--acc2, #fbcfe8), var(--acc3, #be185d));
+  background: linear-gradient(90deg, var(--acc1, #fbcfd5), var(--acc2, #fbcfd5), var(--acc3, #188bbe));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
-.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
+.mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(249,38,68,.45); }
 .mpoll-total {
   margin-top: .8rem; font-size: .85rem; color: var(--faint, #7f88a5);
 }
@@ -477,13 +477,46 @@ mini-poll { display: block; }
   .mpoll-q { font-size: 1.02rem; }
 }
 
+
+/* --- oxytocin enhancement: sequential node fire + compartment pulse --- */
+.nfire{transform-box:fill-box;transform-origin:center;animation:nfire 5s ease-in-out infinite}
+@keyframes nfire{0%,100%{opacity:.45}12%{opacity:1}30%{opacity:.45}}
+.nf1{animation-delay:0s}.nf2{animation-delay:.8s}.nf3{animation-delay:1.6s}.nf4{animation-delay:2.4s}.nf5{animation-delay:3.2s}
+.sqz{transform-box:fill-box;transform-origin:center;animation:sqz 3.2s ease-in-out infinite}
+@keyframes sqz{0%,100%{transform:scaleX(1)}18%{transform:scaleX(.72)}38%{transform:scaleX(1)}}
+.ratehead{margin:2.2rem 0 .6rem;font-size:1.35rem;color:var(--ink);text-align:center}
+.ratehead .star{color:var(--amber)}
+
+/* ===== worker4b: potential-benefits + who-it-may-suit chapters ===== */
+.tierband{display:flex;align-items:center;gap:.7rem;margin:2rem 0 .55rem;flex-wrap:wrap}
+.tbadge{display:inline-flex;align-items:center;gap:.45rem;font-size:.76rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;padding:.45rem .95rem;border-radius:999px;white-space:nowrap}
+.tb-est{background:linear-gradient(90deg,var(--sky),var(--teal));color:#0a0c14}
+.tb-emg{background:rgba(255,255,255,.04);border:2px dashed var(--sky);color:var(--sky)}
+.tb-com{background:rgba(249,38,68,.10);border:2px solid var(--amber);color:var(--amber)}
+.tiernote{margin:0 0 1.1rem;color:var(--muted);font-size:.92rem;line-height:1.6}
+.tiernote strong{color:var(--ink)}
+.fitlist{margin:.6rem 0 0;padding-left:1.15rem;color:var(--muted);font-size:.95rem;line-height:1.7}
+.fitlist li{margin:.5rem 0}
+.fitlist strong{color:var(--ink)}
+[data-theme="light"] .tb-est{color:#ffffff}
+
+/* --- layman example tiles: theme pulse dot (distinct from amber anecdote dots) --- */
+.xtile{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1rem 1.25rem;margin:1.2rem 0;font-size:.94rem;line-height:1.65;color:var(--muted)}
+.xtile strong{color:var(--ink)}
+.xtile .xlead{font-weight:800;color:var(--sky)}
+.xdot{position:absolute;top:-7px;left:24px;width:13px;height:13px;border-radius:50%;background:var(--sky)}
+.xdot::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--sky);animation:xdotPulse 2.2s ease-out infinite}
+@keyframes xdotPulse{0%{transform:scale(.55);opacity:.9}70%{opacity:.25}100%{transform:scale(1.25);opacity:0}}
+@media (prefers-reduced-motion:reduce){.xdot::after{animation:none;opacity:.35;transform:scale(.8)}}
+
 </style>
 </head>
 <body>
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fbcfe8"/><stop offset="50%" stop-color="#fbcfe8"/><stop offset="100%" stop-color="#be185d"/>
+      <stop offset="0%" stop-color="#fbcfd5"/><stop offset="50%" stop-color="#fbcfd5"/><stop offset="100%" stop-color="#188bbe"/>
     </linearGradient>
   </defs>
 </svg>
@@ -509,15 +542,17 @@ mini-poll { display: block; }
   <a href="#ch3"><span class="n">03</span>Two Jobs</a>
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
   <a href="#ch5"><span class="n">05</span>Vs Vasopressin</a>
-  <a href="#ch6"><span class="n">06</span>What People Say</a>
-  <a href="#ch7"><span class="n">07</span>Risks & Unknowns</a>
-  <a href="#ch8"><span class="n">08</span>Glossary</a>
-  <a href="#ch9"><span class="n">09</span>Takeaways</a>
+  <a href="#ch6"><span class="n">06</span>Benefits</a>
+  <a href="#ch7"><span class="n">07</span>Who It May Suit</a>
+  <a href="#ch8"><span class="n">08</span>Community Reports</a>
+  <a href="#ch9"><span class="n">09</span>Risks & Unknowns</a>
+  <a href="#ch10"><span class="n">10</span>Glossary</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
 <nav class="chapters" aria-label="Chapters"><div class="rail" id="rail">
-  <a href="#ch1">01 · Bonding myth</a><a href="#ch2">02 · First of kind</a><a href="#ch3">03 · Two jobs</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Vs vasopressin</a><a href="#ch6">06 · Reports</a><a href="#ch7">07 · Risks</a><a href="#ch8">08 · Glossary</a><a href="#ch9">09 · Takeaways</a>
+  <a href="#ch1">01 · Bonding myth</a><a href="#ch2">02 · First of kind</a><a href="#ch3">03 · Two jobs</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Vs vasopressin</a><a href="#ch6">06 · Benefits</a><a href="#ch7">07 · Fit</a><a href="#ch8">08 · Reports</a><a href="#ch9">09 · Risks</a><a href="#ch10">10 · Glossary</a><a href="#ch11">11 · Takeaways</a>
 </div></nav>
 
 <header class="hero">
@@ -547,20 +582,20 @@ mini-poll { display: block; }
     <svg viewBox="0 0 640 240" role="img" aria-label="Chain of 9 amino acid beads representing oxytocin with its characteristic ring structure">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">OXYTOCIN · 9 AMINO ACIDS · ACETATE = THE SALT FORM</text>
       <g>
-        <circle cx="40.0" cy="95.0" r="9" fill="#be185d" stroke="#fbcfe8" stroke-width="2"/>
-        <circle cx="110.0" cy="111.7" r="9" fill="#be185d" stroke="#fbcfe8" stroke-width="2"/>
-        <circle cx="180.0" cy="116.7" r="9" fill="#be185d" stroke="#fbcfe8" stroke-width="2"/>
-        <circle cx="250.0" cy="106.5" r="9" fill="#be185d" stroke="#fbcfe8" stroke-width="2"/>
-        <circle cx="320.0" cy="88.2" r="9" fill="#be185d" stroke="#fbcfe8" stroke-width="2"/>
-        <circle cx="390.0" cy="74.7" r="9" fill="#be185d" stroke="#fbcfe8" stroke-width="2"/>
-        <circle cx="460.0" cy="75.4" r="9" fill="#be185d" stroke="#fbcfe8" stroke-width="2"/>
-        <circle cx="530.0" cy="89.9" r="9" fill="#be185d" stroke="#fbcfe8" stroke-width="2"/>
-        <circle cx="600.0" cy="107.9" r="9" fill="#be185d" stroke="#fbcfe8" stroke-width="2"/>
+        <circle cx="40.0" cy="95.0" r="9" fill="#188bbe" stroke="#fbcfd5" stroke-width="2"/>
+        <circle cx="110.0" cy="111.7" r="9" fill="#188bbe" stroke="#fbcfd5" stroke-width="2"/>
+        <circle cx="180.0" cy="116.7" r="9" fill="#188bbe" stroke="#fbcfd5" stroke-width="2"/>
+        <circle cx="250.0" cy="106.5" r="9" fill="#188bbe" stroke="#fbcfd5" stroke-width="2"/>
+        <circle cx="320.0" cy="88.2" r="9" fill="#188bbe" stroke="#fbcfd5" stroke-width="2"/>
+        <circle cx="390.0" cy="74.7" r="9" fill="#188bbe" stroke="#fbcfd5" stroke-width="2"/>
+        <circle cx="460.0" cy="75.4" r="9" fill="#188bbe" stroke="#fbcfd5" stroke-width="2"/>
+        <circle cx="530.0" cy="89.9" r="9" fill="#188bbe" stroke="#fbcfd5" stroke-width="2"/>
+        <circle cx="600.0" cy="107.9" r="9" fill="#188bbe" stroke="#fbcfd5" stroke-width="2"/>
       </g>
-      <text x="320" y="168" fill="#fbcfe8" font-size="13" font-weight="800" text-anchor="middle">CYSTEINE 1–6 DISULFIDE RING</text>
+      <text x="320" y="168" fill="#fbcfd5" font-size="13" font-weight="800" text-anchor="middle">CYSTEINE 1–6 DISULFIDE RING</text>
       <text x="320" y="188" fill="#7f88a5" font-size="12" text-anchor="middle">six beads looped into a ring, with a 3-aa tail</text>
-      <rect x="170" y="200" width="300" height="4" rx="2" fill="#be185d" opacity=".8"/>
-      <text x="320" y="222" fill="#fbcfe8" font-size="12" font-weight="700" text-anchor="middle">OXYTOCIN ACETATE ≈ synthetic oxytocin, acetate salt</text>
+      <rect x="170" y="200" width="300" height="4" rx="2" fill="#188bbe" opacity=".8"/>
+      <text x="320" y="222" fill="#fbcfd5" font-size="12" font-weight="700" text-anchor="middle">OXYTOCIN ACETATE ≈ synthetic oxytocin, acetate salt</text>
 
     </svg>
     <div class="cap">Each bead is one amino acid. The ring-and-tail shape is shared with its sibling, vasopressin.</div>
@@ -584,25 +619,25 @@ mini-poll { display: block; }
     <svg viewBox="0 0 640 210" role="img" aria-label="Timeline from oxytocin's discovery to its synthesis and the nasal-spray research era">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">FROM DISCOVERY TO NOBEL</text>
       <line x1="60" y1="110" x2="580" y2="110" stroke="#3a4160" stroke-width="3"/>
-      <line x1="60" y1="110" x2="580" y2="110" stroke="#fbcfe8" stroke-width="3" class="flowseq" opacity=".8"/>
-      <circle cx="90" cy="110" r="26" fill="none" stroke="#be185d" stroke-width="2" class="ringp"/>
-      <circle cx="90" cy="110" r="10" fill="#be185d"/>
-      <text x="90" y="72" fill="#fbcfe8" font-size="14" font-weight="800" text-anchor="middle">1906</text>
+      <line x1="60" y1="110" x2="580" y2="110" stroke="#fbcfd5" stroke-width="3" class="flowseq" opacity=".8"/>
+      <circle cx="90" cy="110" r="26" fill="none" stroke="#188bbe" stroke-width="2" class="ringp"/>
+      <circle cx="90" cy="110" r="10" fill="#188bbe"/>
+      <text x="90" y="72" fill="#fbcfd5" font-size="14" font-weight="800" text-anchor="middle">1906</text>
       <text x="90" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">The effect</text>
       <text x="90" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">pituitary extracts trigger labor</text>
-      <circle cx="243" cy="110" r="26" fill="none" stroke="#be185d" stroke-width="2" class="ringp"/>
-      <circle cx="243" cy="110" r="10" fill="#be185d"/>
-      <text x="243" y="72" fill="#fbcfe8" font-size="14" font-weight="800" text-anchor="middle">1953</text>
+      <circle cx="243" cy="110" r="26" fill="none" stroke="#188bbe" stroke-width="2" class="ringp"/>
+      <circle cx="243" cy="110" r="10" fill="#188bbe"/>
+      <text x="243" y="72" fill="#fbcfd5" font-size="14" font-weight="800" text-anchor="middle">1953</text>
       <text x="243" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">Synthesized</text>
       <text x="243" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">first peptide built in a lab</text>
-      <circle cx="397" cy="110" r="26" fill="none" stroke="#be185d" stroke-width="2" class="ringp"/>
-      <circle cx="397" cy="110" r="10" fill="#be185d"/>
-      <text x="397" y="72" fill="#fbcfe8" font-size="14" font-weight="800" text-anchor="middle">1955</text>
+      <circle cx="397" cy="110" r="26" fill="none" stroke="#188bbe" stroke-width="2" class="ringp"/>
+      <circle cx="397" cy="110" r="10" fill="#188bbe"/>
+      <text x="397" y="72" fill="#fbcfd5" font-size="14" font-weight="800" text-anchor="middle">1955</text>
       <text x="397" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">Nobel Prize</text>
       <text x="397" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">synthesis honored</text>
-      <circle cx="550" cy="110" r="26" fill="none" stroke="#be185d" stroke-width="2" class="ringp"/>
-      <circle cx="550" cy="110" r="10" fill="#be185d"/>
-      <text x="550" y="72" fill="#fbcfe8" font-size="14" font-weight="800" text-anchor="middle">2000s+</text>
+      <circle cx="550" cy="110" r="26" fill="none" stroke="#188bbe" stroke-width="2" class="ringp"/>
+      <circle cx="550" cy="110" r="10" fill="#188bbe"/>
+      <text x="550" y="72" fill="#fbcfd5" font-size="14" font-weight="800" text-anchor="middle">2000s+</text>
       <text x="550" y="162" fill="#a9b1c9" font-size="12" font-weight="700" text-anchor="middle">The hype era</text>
       <text x="550" y="180" fill="#7f88a5" font-size="11" text-anchor="middle">nasal-spray social studies</text>
 
@@ -625,20 +660,20 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 240" role="img" aria-label="Four-step mechanism: receptor binding, uterine contraction, possible social-circuit effects, and context dependence">
       <g text-anchor="middle">
-        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fbcfe8" stroke-width="2"/>
-        <text x="84" y="105" fill="#fbcfe8" font-size="13" font-weight="800">1 · BIND</text>
+        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+        <text x="84" y="105" fill="#fbcfd5" font-size="13" font-weight="800">1 · BIND</text>
         <text x="84" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Oxytocin docks with</text>
         <text x="84" y="146" fill="#a9b1c9" font-size="11" font-weight="600">its receptor</text>
-        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#be185d" stroke-width="2"/>
-        <text x="236" y="105" fill="#be185d" font-size="13" font-weight="800">2 · UTERUS</text>
+        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+        <text x="236" y="105" fill="#188bbe" font-size="13" font-weight="800">2 · UTERUS</text>
         <text x="236" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Uterine muscle contracts</text>
         <text x="236" y="146" fill="#a9b1c9" font-size="11" font-weight="600">labor starts / bleeding stops</text>
-        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fbcfe8" stroke-width="2"/>
-        <text x="388" y="105" fill="#fbcfe8" font-size="13" font-weight="800">3 · BRAIN?</text>
+        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+        <text x="388" y="105" fill="#fbcfd5" font-size="13" font-weight="800">3 · BRAIN?</text>
         <text x="388" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Social circuits may</text>
         <text x="388" y="146" fill="#a9b1c9" font-size="11" font-weight="600">turn up their volume</text>
-        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#be185d" stroke-width="2"/>
-        <text x="540" y="105" fill="#be185d" font-size="13" font-weight="800">4 · NUANCE</text>
+        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+        <text x="540" y="105" fill="#188bbe" font-size="13" font-weight="800">4 · NUANCE</text>
         <text x="540" y="130" fill="#a9b1c9" font-size="11" font-weight="600">Trust AND wariness:</text>
         <text x="540" y="146" fill="#a9b1c9" font-size="11" font-weight="600">context decides</text>
       </g>
@@ -649,11 +684,127 @@ mini-poll { display: block; }
     </svg>
     <div class="cap">Steps 1–2 are established medicine; steps 3–4 are the contested frontier.</div>
   </div>
-<div class="ebar"><div class="row"><span class="t">Labor & bleeding control</span><span class="v">established medicine</span></div><div class="track"><div class="fill" style="--w:95%;background:linear-gradient(90deg,#fbcfe8,#be185d)"></div></div><div class="note">Pitocin’s obstetric jobs are <strong>standard care worldwide</strong> — among the most-used drugs in childbirth.</div></div>
-<div class="ebar"><div class="row"><span class="t">Milk letdown</span><span class="v">real physiology</span></div><div class="track"><div class="fill" style="--w:85%;background:linear-gradient(90deg,#be185d,#fbcfe8)"></div></div><div class="note">Oxytocin triggers milk ejection during nursing — textbook physiology (nasal spray approved for this in some countries).</div></div>
-<div class="ebar"><div class="row"><span class="t">Trust / social effects</span><span class="v">mixed, shrunken</span></div><div class="track"><div class="fill" style="--w:35%;background:linear-gradient(90deg,#831843,#be185d)"></div></div><div class="note">Early small studies wowed; <strong>larger replications mostly fizzled</strong> — the classic hype-cycle arc.</div></div>
-<div class="ebar"><div class="row"><span class="t">Autism / therapy trials</span><span class="v">disappointing</span></div><div class="track"><div class="fill" style="--w:20%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">The big hope — oxytocin for social difficulties — has <strong>not panned out</strong> in major trials so far.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Labor & bleeding control</span><span class="v">established medicine</span></div><div class="track"><div class="fill" style="--w:95%;background:linear-gradient(90deg,#fbcfd5,#188bbe)"></div></div><div class="note">Pitocin’s obstetric jobs are <strong>standard care worldwide</strong> — among the most-used drugs in childbirth.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Milk letdown</span><span class="v">real physiology</span></div><div class="track"><div class="fill" style="--w:85%;background:linear-gradient(90deg,#188bbe,#fbcfd5)"></div></div><div class="note">Oxytocin triggers milk ejection during nursing — textbook physiology (nasal spray approved for this in some countries).</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Trust / social effects</span><span class="v">mixed, shrunken</span></div><div class="track"><div class="fill" style="--w:35%;background:linear-gradient(90deg,#831827,#188bbe)"></div></div><div class="note">Early small studies wowed; <strong>larger replications mostly fizzled</strong> — the classic hype-cycle arc.</div></div>
+<div class="ebar reveal"><div class="row"><span class="t">Autism / therapy trials</span><span class="v">disappointing</span></div><div class="track"><div class="fill" style="--w:20%;background:linear-gradient(90deg,#3a4160,#3a4160)"></div></div><div class="note">The big hope — oxytocin for social difficulties — has <strong>not panned out</strong> in major trials so far.</div></div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>The honest chain: <strong>bind → uterus → brain? → nuance</strong>. Nobody disputes the uterus part — it’s delivered millions of babies. The brain part is where a decade of TED-talk certainty <strong>melted into replication-failure humility</strong>. Oxytocin doesn’t create love; at most, it <strong>amplifies the social channel already playing</strong>.</p></div>
+
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">One molecule, two delivery routes</h4>
+<svg viewBox="0 0 640 335" role="img" aria-label="Oxytocin made in the hypothalamus, released by the posterior pituitary into the brain and into the bloodstream separately">
+<g text-anchor="middle" font-weight="800">
+<rect class="nfire nf1" x="20" y="115" width="130" height="80" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="85" y="150" fill="#fbcfd5" font-size="13">HYPOTHALAMUS</text>
+<text x="85" y="170" fill="#a9b1c9" font-size="11" font-weight="600">makes oxytocin</text>
+<rect class="nfire nf2" x="240" y="115" width="150" height="80" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="315" y="143" fill="#fbcfd5" font-size="13">POSTERIOR</text>
+<text x="315" y="161" fill="#fbcfd5" font-size="13">PITUITARY</text>
+<text x="315" y="179" fill="#a9b1c9" font-size="11" font-weight="600">releases it</text>
+<rect class="nfire nf3" x="450" y="25" width="170" height="75" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="535" y="56" fill="#fbcfd5" font-size="13">BRAIN CIRCUITS</text>
+<text x="535" y="76" fill="#a9b1c9" font-size="11" font-weight="600">social behavior</text>
+<rect class="nfire nf4" x="450" y="230" width="170" height="75" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+<text x="535" y="261" fill="#fbcfd5" font-size="13">UTERUS · BREAST</text>
+<text x="535" y="281" fill="#a9b1c9" font-size="11" font-weight="600">contraction · milk</text>
+<text x="418" y="102" fill="#7f88a5" font-size="10" font-weight="700">central</text>
+<text x="418" y="224" fill="#7f88a5" font-size="10" font-weight="700">bloodstream</text>
+</g>
+<g stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
+<path d="M150 155 H240"/><path d="M390 135 C 425 135, 425 62, 450 62"/><path d="M390 175 C 425 175, 425 267, 450 267"/>
+</g>
+<circle r="5" fill="#fbcfd5"><animateMotion dur="3.5s" repeatCount="indefinite" path="M150 155 H240"/></circle>
+<circle r="5" fill="#fbcfd5"><animateMotion dur="4s" repeatCount="indefinite" path="M390 135 C 425 135, 425 62, 450 62"/></circle>
+<circle r="5" fill="#188bbe"><animateMotion dur="4s" begin="1s" repeatCount="indefinite" path="M390 175 C 425 175, 425 267, 450 267"/></circle>
+<text x="320" y="322" fill="#7f88a5" font-size="12" text-anchor="middle" font-weight="600">Blood oxytocin and brain oxytocin are mostly separate pools — the blood-brain barrier keeps it that way</text>
+</svg>
+<div class="cap">Two release routes, two jobs: the bloodstream carries the obstetric signal; the brain uses its own local supply.</div>
+</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Labor: a positive-feedback loop</h4>
+<svg viewBox="0 0 640 250" role="img" aria-label="Labor sequence: oxytocin rises, receptors catch it, uterus contracts, cervix stretches, more oxytocin released">
+<g text-anchor="middle" font-weight="800">
+<rect class="nfire nf1" x="15" y="55" width="135" height="110" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="82" y="92" fill="#fbcfd5" font-size="12">1 · SIGNAL RISES</text>
+<text x="82" y="112" fill="#a9b1c9" font-size="11" font-weight="600">oxytocin climbs</text>
+<text x="82" y="128" fill="#a9b1c9" font-size="11" font-weight="600">late pregnancy</text>
+<rect class="nfire nf2" x="175" y="55" width="135" height="110" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+<text x="242" y="92" fill="#188bbe" font-size="12">2 · RECEPTORS</text>
+<text x="242" y="112" fill="#a9b1c9" font-size="11" font-weight="600">uterine muscle</text>
+<text x="242" y="128" fill="#a9b1c9" font-size="11" font-weight="600">receptors multiply</text>
+<rect class="nfire nf3" x="335" y="55" width="135" height="110" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="402" y="88" fill="#fbcfd5" font-size="12">3 · CONTRACTION</text>
+<rect class="sqz" x="352" y="102" width="100" height="22" rx="11" fill="#188bbe" opacity=".85"/>
+<text x="402" y="146" fill="#a9b1c9" font-size="11" font-weight="600">rhythmic squeezes</text>
+<rect class="nfire nf4" x="495" y="55" width="135" height="110" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+<text x="562" y="92" fill="#188bbe" font-size="12">4 · FEEDBACK</text>
+<text x="562" y="112" fill="#a9b1c9" font-size="11" font-weight="600">cervix stretches</text>
+<text x="562" y="128" fill="#a9b1c9" font-size="11" font-weight="600">→ more oxytocin</text>
+<text x="320" y="18" fill="#7f88a5" font-size="11" font-weight="700">positive feedback</text>
+</g>
+<g stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
+<path d="M150 110 H175"/><path d="M310 110 H335"/><path d="M470 110 H495"/>
+<path d="M562 55 C 562 28, 82 28, 82 55" stroke-dasharray="6 6"/>
+</g>
+<circle r="5" fill="#fbcfd5"><animateMotion dur="5s" repeatCount="indefinite" path="M150 110 H175 M310 110 H335 M470 110 H495"/></circle>
+<circle r="5" fill="#f92644"><animateMotion dur="5s" repeatCount="indefinite" path="M562 55 C 562 28, 82 28, 82 55"/></circle>
+</svg>
+<div class="cap">Each contraction stretches the cervix, which calls for more oxytocin — the loop that drives labor forward.</div>
+</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Lactation: five steps, no shortcuts</h4>
+<svg viewBox="0 0 640 260" role="img" aria-label="Lactation sequence: suckling, nerve signal, hypothalamus, posterior pituitary, oxytocin in blood, milk ejection">
+<g text-anchor="middle" font-weight="800">
+<rect class="nfire nf1" x="8" y="40" width="112" height="130" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="64" y="75" fill="#fbcfd5" font-size="12">1 · SUCKLE</text>
+<text x="64" y="97" fill="#a9b1c9" font-size="11" font-weight="600">baby nurses</text>
+<text x="64" y="113" fill="#a9b1c9" font-size="11" font-weight="600">nipple signal</text>
+<rect class="nfire nf2" x="136" y="40" width="112" height="130" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+<text x="192" y="75" fill="#188bbe" font-size="12">2 · NERVES</text>
+<text x="192" y="97" fill="#a9b1c9" font-size="11" font-weight="600">sensory nerves</text>
+<text x="192" y="113" fill="#a9b1c9" font-size="11" font-weight="600">carry the signal</text>
+<rect class="nfire nf3" x="264" y="40" width="112" height="130" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="320" y="75" fill="#fbcfd5" font-size="12">3 · BRAIN</text>
+<text x="320" y="97" fill="#a9b1c9" font-size="11" font-weight="600">hypothalamus →</text>
+<text x="320" y="113" fill="#a9b1c9" font-size="11" font-weight="600">post. pituitary</text>
+<rect class="nfire nf4" x="392" y="40" width="112" height="130" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+<text x="448" y="75" fill="#188bbe" font-size="12">4 · BLOOD</text>
+<text x="448" y="97" fill="#a9b1c9" font-size="11" font-weight="600">oxytocin released</text>
+<text x="448" y="113" fill="#a9b1c9" font-size="11" font-weight="600">into circulation</text>
+<rect class="nfire nf5" x="520" y="40" width="112" height="130" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="576" y="75" fill="#fbcfd5" font-size="12">5 · LET-DOWN</text>
+<circle cx="576" cy="112" r="20" fill="none" stroke="#fbcfd5" stroke-width="2"/>
+<circle class="nfire nf5" cx="576" cy="112" r="20" fill="none" stroke="#188bbe" stroke-width="2"/>
+<text x="576" y="152" fill="#a9b1c9" font-size="11" font-weight="600">milk ejected</text>
+</g>
+<g stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
+<path d="M120 105 H136"/><path d="M248 105 H264"/><path d="M376 105 H392"/><path d="M504 105 H520"/>
+</g>
+<circle r="5" fill="#fbcfd5"><animateMotion dur="6s" repeatCount="indefinite" path="M120 105 H136 M248 105 H264 M376 105 H392 M504 105 H520"/></circle>
+</svg>
+<div class="cap">Oxytocin doesn’t make milk — it squeezes the tiny muscles around the milk glands so milk flows.</div>
+</div>
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Where the receptors live</h4>
+<svg viewBox="0 0 640 180" role="img" aria-label="Oxytocin receptor distribution: uterus, breast, brain, and other tissues">
+<line x1="40" y1="95" x2="600" y2="95" stroke="#2c2747" stroke-width="3"/>
+<g text-anchor="middle" font-weight="800">
+<circle class="nfire nf1" cx="120" cy="95" r="11" fill="#188bbe"/>
+<text x="120" y="60" fill="#fbcfd5" font-size="13">UTERUS</text>
+<text x="120" y="140" fill="#7f88a5" font-size="11" font-weight="600">contracts in labor</text>
+<circle class="nfire nf2" cx="280" cy="95" r="11" fill="#188bbe"/>
+<text x="280" y="60" fill="#fbcfd5" font-size="13">BREAST</text>
+<text x="280" y="140" fill="#7f88a5" font-size="11" font-weight="600">milk ejection</text>
+<circle class="nfire nf3" cx="440" cy="95" r="11" fill="#fbcfd5"/>
+<text x="440" y="60" fill="#fbcfd5" font-size="13">BRAIN</text>
+<text x="440" y="140" fill="#7f88a5" font-size="11" font-weight="600">social salience</text>
+<circle class="nfire nf4" cx="560" cy="95" r="11" fill="#7f88a5"/>
+<text x="560" y="60" fill="#a9b1c9" font-size="13">…AND MORE</text>
+<text x="560" y="140" fill="#7f88a5" font-size="11" font-weight="600">heart, kidney…</text>
+</g>
+</svg>
+<div class="cap">One receptor, many addresses — the tissue decides what the signal means.</div>
+</div>
 </section>
 <mini-poll slug="oxytocin-mini-ch3"
   data-question="Which oxytocin job is most interesting?"
@@ -669,6 +820,38 @@ mini-poll { display: block; }
 <div class="card org reveal"><h3>The nuance survivors</h3><p>What remains: oxytocin seems to <strong>modulate salience of social cues</strong> — in-group favoritism, envy, stress responses — highly <strong>context-dependent</strong>, not a warmth dial.</p></div>
   </div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>Oxytocin’s evidence file is <strong>two different report cards</strong>: straight A’s in obstetrics, and a psychology transcript full of <strong>retracted gold stars</strong>. The lesson isn’t that the early scientists lied — it’s that small studies plus exciting stories <strong>break on contact with big replications</strong>.</p></div>
+
+<div class="diagram reveal">
+<h4 style="margin:0 0 .4rem;color:var(--ink)">Bonding, stress &amp; social behavior — it’s complicated</h4>
+<svg viewBox="0 0 640 230" role="img" aria-label="Oxytocin amplifies social context: trust and wariness both rise depending on the situation">
+<g text-anchor="middle" font-weight="800">
+<rect x="20" y="60" width="180" height="110" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="110" y="100" fill="#fbcfd5" font-size="12">TRUST ↑</text>
+<text x="110" y="122" fill="#a9b1c9" font-size="11" font-weight="600">with “us”</text>
+<text x="110" y="138" fill="#a9b1c9" font-size="11" font-weight="600">in-group warmth</text>
+<rect x="230" y="60" width="180" height="110" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+<text x="320" y="100" fill="#188bbe" font-size="12">WARINESS ↑</text>
+<text x="320" y="122" fill="#a9b1c9" font-size="11" font-weight="600">toward “them”</text>
+<text x="320" y="138" fill="#a9b1c9" font-size="11" font-weight="600">out-group suspicion</text>
+<rect x="440" y="60" width="180" height="110" rx="14" fill="#151b36" stroke="#f92644" stroke-width="2"/>
+<text x="530" y="100" fill="#f92644" font-size="12">STRESS LINK</text>
+<text x="530" y="122" fill="#a9b1c9" font-size="11" font-weight="600">rises under stress</text>
+<text x="530" y="138" fill="#a9b1c9" font-size="11" font-weight="600">seek support</text>
+</g>
+<text x="320" y="205" fill="#7f88a5" font-size="12" text-anchor="middle" font-weight="600">Same molecule, opposite social outcomes — the situation picks the effect, not the peptide</text>
+</svg>
+<div class="cap">“Love hormone” was always too simple: oxytocin turns up the social volume, whatever station is playing.</div>
+</div>
+<div class="grid3">
+<div class="card sky reveal"><h3>Context is the drug</h3><p>Oxytocin’s social effects <strong>flip with the setting</strong>: supportive context → warmth; threatening context → defensiveness. The molecule doesn’t choose — the room does.</p></div>
+<div class="card teal reveal"><h3>Trust <em>and</em> suspicion</h3><p>Studies link oxytocin to <strong>in-group favoritism and envy</strong> as well as generosity. A “bonding” chemical that also sharpens tribal lines is not a love potion.</p></div>
+<div class="card org reveal"><h3>Stress, not just cuddles</h3><p>Oxytocin <strong>rises during stress</strong> and may drive people to seek social support — the “tend and befriend” response. Calm molecule? Sometimes it’s the alarm.</p></div>
+</div>
+<h4 class="reveal" style="margin:1.6rem 0 .6rem;color:var(--ink)">What it does vs what it doesn’t do</h4>
+<div class="grid2">
+<div class="card sky reveal"><h3>✅ What it does</h3><p>Drives <strong>uterine contractions</strong> in labor; triggers <strong>milk ejection</strong> during nursing; controls <strong>postpartum bleeding</strong> — all established, hospital-grade medicine.</p></div>
+<div class="card org reveal"><h3>🚫 What it doesn’t do</h3><p><strong>Create love, trust, or bonding</strong> on demand; fix social difficulties (major trials disappointed); work as a reliable <strong>nasal-spray social enhancer</strong>.</p></div>
+</div>
 </section>
 <mini-poll slug="oxytocin-mini-ch4"
   data-question="Bulletproof in obstetrics, shaky in psychology — your take?"
@@ -686,53 +869,142 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 230" role="img" aria-label="Oxytocin and vasopressin as two sibling nonapeptides with different roles">
       <g font-size="13" font-weight="800" text-anchor="middle">
-        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#be185d" stroke-width="2"/>
-        <text x="130" y="75" fill="#fbcfe8">OXYTOCIN</text>
+        <rect x="40" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+        <text x="130" y="75" fill="#fbcfd5">OXYTOCIN</text>
         <text x="130" y="98" fill="#a9b1c9" font-size="11" font-weight="600">labor + milk</text>
         <text x="130" y="114" fill="#a9b1c9" font-size="11" font-weight="600">famous, overhyped</text>
-        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#be185d" stroke-width="2"/>
-        <text x="510" y="75" fill="#fbcfe8">VASOPRESSIN</text>
+        <rect x="420" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+        <text x="510" y="75" fill="#fbcfd5">VASOPRESSIN</text>
         <text x="510" y="98" fill="#a9b1c9" font-size="11" font-weight="600">water + pressure</text>
         <text x="510" y="114" fill="#a9b1c9" font-size="11" font-weight="600">quiet, underrated</text>
         <rect x="230" y="150" width="180" height="60" rx="14" fill="#151b36" stroke="#7f88a5" stroke-width="2" stroke-dasharray="7 5"/>
         <text x="320" y="176" fill="#a9b1c9" font-size="12">"2 AMINO ACIDS APART"</text>
         <text x="320" y="195" fill="#7f88a5" font-size="10" font-weight="600">tiny edit, different careers</text>
       </g>
-      <g stroke="#fbcfe8" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
+      <g stroke="#fbcfd5" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
         <path d="M220 100 Q 280 130 240 155"/><path d="M420 100 Q 360 130 400 155"/>
       </g>
     </svg>
     <div class="cap">The sibling rivalry that explains why “bonding hormone” was always too simple.</div>
   </div>
+<h4 class="reveal" style="margin:1.6rem 0 .6rem;color:var(--ink)">Oxytocin vs Kisspeptin-10 vs Gonadorelin — different jobs in reproduction</h4>
+<div class="diagram reveal">
+<svg viewBox="0 0 640 250" role="img" aria-label="Where oxytocin, kisspeptin-10 and gonadorelin act in reproductive physiology">
+<g text-anchor="middle" font-weight="800">
+<rect class="nfire nf1" x="20" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#188bbe" stroke-width="2"/>
+<text x="110" y="75" fill="#188bbe" font-size="12">KISSPEPTIN-10</text>
+<text x="110" y="97" fill="#a9b1c9" font-size="11" font-weight="600">top of the chain</text>
+<text x="110" y="113" fill="#a9b1c9" font-size="11" font-weight="600">tells GnRH neurons: go</text>
+<rect class="nfire nf2" x="230" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#fbcfd5" stroke-width="2"/>
+<text x="320" y="75" fill="#fbcfd5" font-size="12">GONADORELIN</text>
+<text x="320" y="97" fill="#a9b1c9" font-size="11" font-weight="600">middle of the chain</text>
+<text x="320" y="113" fill="#a9b1c9" font-size="11" font-weight="600">GnRH receptor → LH/FSH</text>
+<rect class="nfire nf3" x="440" y="40" width="180" height="90" rx="14" fill="#151b36" stroke="#f92644" stroke-width="2"/>
+<text x="530" y="75" fill="#f92644" font-size="12">OXYTOCIN</text>
+<text x="530" y="97" fill="#a9b1c9" font-size="11" font-weight="600">different system</text>
+<text x="530" y="113" fill="#a9b1c9" font-size="11" font-weight="600">uterus · breast · brain</text>
+</g>
+<g stroke="#7f88a5" stroke-width="2" fill="none" class="flowseq" stroke-dasharray="6 6">
+<path d="M200 85 H230"/><path d="M410 85 H440" stroke-dasharray="3 6" opacity=".4"/>
+</g>
+<text x="320" y="170" fill="#7f88a5" font-size="12" text-anchor="middle" font-weight="600">Kisspeptin-10 and gonadorelin work the reproductive hormone axis (GnRH → LH/FSH).</text>
+<text x="320" y="190" fill="#7f88a5" font-size="12" text-anchor="middle" font-weight="600">Oxytocin runs a separate track: the business end of birth and nursing.</text>
+<text x="320" y="225" fill="#fbcfd5" font-size="12" text-anchor="middle" font-weight="700">Same neighborhood (reproduction), different streets, different vehicles.</text>
+</svg>
+<div class="cap">All three touch reproduction — but through different receptors, different pathways, different jobs.</div>
+</div>
+<div class="grid3">
+<div class="card sky reveal"><h3>Kisspeptin-10 · the starter</h3><p>Acts <strong>upstream</strong> on KISS1R to trigger GnRH release — the ignition switch of the reproductive hormone cascade.</p></div>
+<div class="card teal reveal"><h3>Gonadorelin · the messenger</h3><p><strong>Is</strong> GnRH (synthetic) — binds GnRH receptors on the pituitary to release <strong>LH and FSH</strong>. Direct, mid-chain action.</p></div>
+<div class="card org reveal"><h3>Oxytocin · the closer</h3><p>Skips the hormone cascade entirely: acts on <strong>oxytocin receptors</strong> in uterus and breast for labor and milk. Different receptor family, different mission.</p></div>
+</div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>They’re <strong>fraternal twins</strong>: same 9-bead scaffold, two beads swapped, utterly different careers — one a celebrity obstetrician with a pop-psychology side hustle, the other a <strong>kidney-and-blood-pressure specialist</strong> with a secret life in vole romance. Fame, as usual, went to the <strong>better storyteller</strong>, not the harder worker.</p></div>
 </section>
 <mini-poll slug="oxytocin-mini-ch5"
-  data-question="Oxytocin vs vasopressin — which is more interesting?"
-  data-answers='[["⭐", "Oxytocin the celebrity"], ["🌑", "Vasopressin the quiet one"], ["🧬", "The 2-aa difference"], ["😐", "Both, equally"]]'>
+  data-question="Oxytocin vs vasopressin vs the reproductive trio — which comparison surprised you most?"
+  data-answers='[["⭐", "Oxytocin vs vasopressin"], ["🧬", "Oxytocin vs kisspeptin-10"], ["🎯", "Oxytocin vs gonadorelin"], ["😐", "None surprised me"]]'>
 </mini-poll>
+<!-- ============ CHAPTER 6 ============ -->
 <section class="chapter" id="ch6">
-  <span class="eyebrow"><span class="n">06</span>What people say</span>
-  <h2>Reports from the <span class="hl">wild</span></h2>
-  <p class="lede">Oxytocin’s forum life is <strong>two separate worlds</strong>: birth stories praising or cursing Pitocin, and biohackers nasal-spraying for social ease. Stories, not data — from both camps.</p>
+  <span class="eyebrow"><span class="n">06</span>Potential benefits</span>
+  <h2>What oxytocin <span class="hl">genuinely</span> offers</h2>
+  <p class="lede">Two report cards: <strong>straight A’s in the delivery room</strong>, and a psychology transcript full of retracted gold stars. Sorted accordingly.</p>
+  <div class="tierband reveal"><span class="tbadge tb-est">✓ Established scientific data</span></div>
+  <p class="tiernote reveal"><strong>What this tier means:</strong> hospital-grade, beyond dispute — the obstetric half of the résumé.</p>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Labor induction &amp; augmentation</h3><p>Pitocin to start or strengthen contractions is <strong>global standard care</strong> — titrated by professionals, with fetal monitoring.</p></div>
+    <div class="card teal reveal"><h3>Postpartum hemorrhage control</h3><p>Contracts the uterus to clamp down dangerous bleeding — a <strong>lifesaving</strong> routine use worldwide.</p></div>
+    <div class="card org reveal"><h3>Milk ejection (letdown)</h3><p>Triggers the <strong>milk-ejection reflex</strong> during nursing — textbook physiology, not hype.</p></div>
+  </div>
+  <div class="xtile reveal"><span class="xdot" aria-hidden="true"></span><p><span class="xlead">Think of it this way:</span> oxytocin’s established benefits are like a firefighter’s résumé — documented rescues, not personality testimonials.</p></div>
+  <div class="tierband reveal"><span class="tbadge tb-emg">◐ Predicted or emerging data</span></div>
+  <p class="tiernote reveal"><strong>What this tier means:</strong> real research directions — context-dependent, mixed, and not indications.</p>
+  <div class="grid3">
+    <div class="card sky reveal"><h3>Social salience, not social warmth</h3><p>Seems to <strong>amplify whatever social cues are present</strong> — trust and suspicion both rise with context. A modulator, not a love dial.</p></div>
+    <div class="card teal reveal"><h3>Stress-response research</h3><p>Rises under stress; may drive support-seeking (“tend and befriend”). <strong>Investigational</strong> — not a treatment.</p></div>
+    <div class="card org reveal"><h3>The deflated file</h3><p>Autism, PTSD, “trust in a bottle”: bigger preregistered trials found <strong>little to nothing</strong>. Kept here as a caution, not a benefit.</p></div>
+  </div>
+  <div class="tierband reveal"><span class="tbadge tb-com">● Community reports</span></div>
+  <p class="tiernote reveal"><strong>What this tier means:</strong> recurring stories from the spray crowd — unverified, and the exact effects the big trials failed to find.</p>
+  <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Stories, not data</strong> — the pulsing dot marks paraphrased recurring themes: not verified, not evidence.</p></div>
+  <div class="anec-grid">
+    <div class="anec reveal"><div class="anec-head"><h4>The social glow</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Nasal spray before a party — I felt warmer toward everyone.” <strong>Caveat:</strong> the exact effect the big trials failed to find; expectation does heavy lifting.</p></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Bonding with baby</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Did skin-to-skin release MY oxytocin?” <strong>Caveat:</strong> endogenous bonding physiology is real — extra spray probably adds nothing.</p></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The dark side</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Made me more jealous, not more loving.” <strong>Caveat:</strong> actually consistent with the salience literature — amplification, not sweetness.</p></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Nothing happened</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Three different sprays, zero noticeable effect.” <strong>Caveat:</strong> the most common honest report — and the one the replications predict.</p></div>
+  </div>
+  <div class="plain reveal"><div class="plabel">Plain English</div><p>Established: <strong>labor, bleeding control, letdown</strong> — the delivery-room trilogy. Emerging: a <strong>context amplifier</strong> for social signals, still being mapped. Reported: spray stories the trials couldn’t reproduce. The molecule earned its fame in obstetrics; the rest is still auditioning.</p></div>
+</section>
+<mini-poll slug="oxytocin-mini-benefits"
+  data-question="Oxytocin&#39;s split benefit file — your read?"
+  data-answers='[["👶", "Obstetrics is the real story"], ["🧠", "Brain research still interests me"], ["📉", "Hype did the damage"], ["⚖️", "Both piles matter"]]'>
+</mini-poll>
+<!-- ============ CHAPTER 7 ============ -->
+<section class="chapter" id="ch7">
+  <span class="eyebrow"><span class="n">07</span>Who it may suit</span>
+  <h2>Who it may suit — <span class="hl">and who it may not</span></h2>
+  <p class="lede">A hospital drug and a folk remedy share a molecule — the “who” depends entirely on <strong>which job</strong> is being discussed.</p>
+  <div class="grid2">
+    <div class="card sky reveal"><h3>Who it may be relevant to</h3><ul class="fitlist">
+      <li><strong>Laboring people receiving Pitocin</strong> for induction or augmentation — <strong>under professional obstetric care</strong>, with monitoring.</li>
+      <li><strong>Postpartum hemorrhage prevention and treatment</strong> — in hospital settings, where it saves lives routinely.</li>
+      <li><strong>Nursing parents</strong> experiencing the natural letdown reflex — physiology, not a product.</li>
+    </ul></div>
+    <div class="card org reveal"><h3>Who it may not suit — or needs extra caution</h3><ul class="fitlist">
+      <li><strong>Anyone considering DIY labor induction or augmentation</strong> — dangerous without monitoring; a hospital drug for a reason.</li>
+      <li><strong>People buying unregulated nasal sprays</strong> for trust, bonding, or mood — effects unproven, contents and purity unknown.</li>
+      <li><strong>Situations where uterine stimulation is contraindicated</strong> — a clinician’s call, never a solo one.</li>
+    </ul></div>
+  </div>
+  <div class="plain reveal"><div class="plabel">A clear line</div><p>This is <strong>general information, not personal medical advice.</strong> Obstetric decisions belong to the delivery team; social-use claims belong in the “unproven” pile.</p></div>
+</section>
+<mini-poll slug="oxytocin-mini-fit"
+  data-question="Who is oxytocin actually for?"
+  data-answers='[["🏥", "Delivery-room patients"], ["🍼", "Nursing physiology"], ["🚫", "Not the spray crowd"], ["🤔", "Still sorting it out"]]'>
+</mini-poll>
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Community Reports</span>
+  <h2>Community <span class="hl">reports</span></h2>
+  <p class="lede">Paraphrased recurring themes from <strong>Reddit, TikTok, YouTube Shorts, and forums</strong> — social feelings, bonding, libido, mood, anxiety, sleep, and no-effect reports. <strong>Stories, not data.</strong></p>
   <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div>
   <div class="anec-grid">
-<div class="anec reveal"><div class="anec-head"><h4>The Pitocin cascade</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Pitocin made my contractions unbearable — cascade of interventions.” <strong>Caveat:</strong> the most heated birth-forum debate; <strong>confounded by why induction was needed</strong> in the first place.</p><div class="caveat">Pattern: the obstetric controversy that never cools.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>The lifesaver</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Pitocin stopped my hemorrhage — I’d have died without it.” <strong>Caveat:</strong> postpartum hemorrhage is an <strong>emergency</strong>; gratitude stories understate how routine this save is.</p><div class="caveat">Pattern: the quiet majority experience, rarely posted.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>The trust spray</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Nasal oxytocin before dates — I felt smoother.” <strong>Caveat:</strong> the exact use the big trials <strong>failed to support</strong>; expectation does heavy lifting here.</p><div class="caveat">Pattern: the hype-era ritual, persisting past the evidence.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>The autism hope</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Tried it for my kid’s social difficulties.” <strong>Caveat:</strong> major trials disappointed — and <strong>children + experimental neurochemistry</strong> is the highest-stakes DIY.</p><div class="caveat">Pattern: hope outrunning data, at its most poignant.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Bonding with baby</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Did skin-to-skin release MY oxytocin?” <strong>Caveat:</strong> endogenous oxytocin during bonding is <strong>real physiology</strong> — the question is only what extra spray adds (probably nothing).</p><div class="caveat">Pattern: good instincts, wrong product.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>The dark side</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Made me more jealous, not more loving.” <strong>Caveat:</strong> actually <strong>consistent with the nuance literature</strong> — oxytocin amplifies social salience, not sweetness.</p><div class="caveat">Pattern: anecdote accidentally confirming the science.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>Spray roulette</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“One vendor’s spray did nothing, another gave me a headache.” <strong>Caveat:</strong> unregulated nasal products: unknown dose, unknown purity, unknown sterility — <strong>in the nose</strong>.</p><div class="caveat">Pattern: gray-market chaos, inhaled.</div></div>
-<div class="anec reveal"><div class="anec-head"><h4>The debunk dividend</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Glad I read the replication stuff before buying.” <strong>Caveat:</strong> the rare thread where <strong>failed replications</strong> get celebrated as useful.</p><div class="caveat">Pattern: skepticism as self-care.</div></div>
-  </div>
+<div class="anec reveal"><div class="anec-head"><h4>The social glow</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Nasal spray before a party — I felt warmer toward everyone." <strong>Caveat:</strong> the exact effect the <strong>big trials failed to find</strong>; expectation and alcohol do heavy lifting.</p><div class="caveat">Pattern: social feelings, self-reported.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Bonding with baby</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Did skin-to-skin release MY oxytocin?" <strong>Caveat:</strong> endogenous oxytocin during bonding is <strong>real physiology</strong> — the question is only what extra spray adds (probably nothing).</p><div class="caveat">Pattern: bonding, good instincts, wrong product.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>The libido question</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Tried it for intimacy — felt closer, maybe." <strong>Caveat:</strong> human evidence for pro-sexual effects is <strong>thin and mixed</strong>; closeness and arousal are easy to conflate.</p><div class="caveat">Pattern: libido reports, heavily confounded.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Mood lift?</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"My mood lifted for an hour after spraying." <strong>Caveat:</strong> no robust antidepressant signal in trials; <strong>brief mood shifts</strong> track with placebo in most studies.</p><div class="caveat">Pattern: mood, short-lived and unverified.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Calmer, or just tired</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"It took the edge off my anxiety before meetings." <strong>Caveat:</strong> anxiolytic claims come from <strong>small, mixed studies</strong>; sedation and relief feel similar from the inside.</p><div class="caveat">Pattern: anxiety, ambiguous mechanism.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Sleep stories</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Spray at night and I sleep deeper." <strong>Caveat:</strong> essentially <strong>no controlled sleep data</strong>; bedtime rituals themselves improve sleep.</p><div class="caveat">Pattern: sleep, ritual confound likely.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>The dark side</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Made me more jealous, not more loving." <strong>Caveat:</strong> actually <strong>consistent with the nuance literature</strong> — oxytocin amplifies social salience, not sweetness.</p><div class="caveat">Pattern: anecdote accidentally confirming the science.</div></div>
+<div class="anec reveal"><div class="anec-head"><h4>Nothing happened</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>"Three different sprays, zero noticeable effect." <strong>Caveat:</strong> the <strong>most common honest report</strong> — and the one the replication literature predicts.</p><div class="caveat">Pattern: no-effect reports, underposted.</div></div>
+  </div></div>
   <div class="folk-note reveal"><p>Oxytocin is the only molecule here with <strong>two completely separate fanbases</strong> — birth forums and biohackers — who barely know the other exists. The birth crowd argues about a <strong>proven drug’s trade-offs</strong>; the biohacker crowd chases <strong>effects the trials couldn’t find</strong>. Different conversations, different evidence.</p></div>
 </section>
-<mini-poll slug="oxytocin-mini-ch6"
-  data-question="Oxytocin forum stories — how do you read them?"
+<mini-poll slug="oxytocin-mini-ch8"
+  data-question="Community reports on oxytocin — which pattern stands out to you?"
   data-answers='[["💬", "Birth stories matter"], ["🧂", "Spray stories need salt"], ["🔬", "The debunks help"], ["⚖️", "Stories aren’t data"]]'>
 </mini-poll>
-<section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Risks & unknowns</span>
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Risks & unknowns</span>
   <h2>Risks &amp; <span class="hl">unknowns</span></h2>
   <p class="lede">A hospital staple with a <strong>serious obstetric risk file</strong> — plus a speculative neurohype file that’s mostly blank.</p>
   <div class="safety-grid">
@@ -745,81 +1017,85 @@ mini-poll { display: block; }
   </div>
 <div class="plain reveal"><div class="plabel">Plain English</div><p>Known: <strong>real obstetric risks, hospital-managed</strong> — this is a powerful drug used carefully. Plausible: the social shadow side. Unknown: <strong>chronic nasal use</strong> and whatever’s in unregulated sprays. Respect the delivery-room drug; <strong>retire the love-potion fantasy</strong>.</p></div>
 </section>
-<mini-poll slug="oxytocin-mini-ch7"
+<mini-poll slug="oxytocin-mini-ch9"
   data-question="Biggest takeaway?"
   data-answers='[["🏆", "Historic molecule"], ["⚠️", "Respect the drug"], ["📉", "Hype vs evidence"], ["❓", "All of it"]]'>
 </mini-poll>
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Glossary</span>
-  <h2>Speak <span class="hl">oxytocin</span></h2>
-  <p class="lede">Twelve terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Glossary</span>
+  <h2>Understanding <span class="hl">Oxytocin</span> Terminology</h2>
+  <p class="lede">Twelve terms, each with the scientific definition and a plain-English translation. Tap any term to expand it.</p>
   <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbcfe822"/><circle cx="24" cy="24" r="13" fill="none" stroke="#fbcfe8" stroke-width="2.5"/><circle cx="24" cy="24" r="4.5" fill="#fbcfe8"/></svg><span class="term">Oxytocin</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A 9-amino-acid peptide made in the hypothalamus: drives uterine contraction and milk letdown, and modulates social salience.</p>
-      <p class="gex"><span class="gslabel">Example</span>The molecule this page is about.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The “swift birth” peptide — obstetric workhorse, pop-psychology celebrity.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbcfe822"/><circle cx="24" cy="24" r="13" fill="none" stroke="#fbcfd5" stroke-width="2.5"/><circle cx="24" cy="24" r="4.5" fill="#fbcfd5"/></svg><span class="term">Oxytocin</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A nine-amino-acid peptide hormone synthesized in the hypothalamus and released from the posterior pituitary gland. Its established medical roles are in reproduction: it drives uterine contractions during labor and triggers milk ejection during nursing. Synthetic oxytocin (Pitocin) is one of the most used drugs in obstetrics, for inducing or augmenting labor and controlling bleeding after birth. In the popular imagination it became the "love hormone" after early studies linked nasal sprays to trust and bonding — findings that largely failed to replicate. The gap between its solid obstetric record and its shaky social record is the central theme of this page.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Oxytocin is a tiny brain-made hormone with two rock-solid jobs: starting labor contractions and releasing milk during nursing. The synthetic version, Pitocin, is one of the most-used drugs in childbirth. It also became famous as the "love hormone" after early studies suggested a nasal spray could boost trust and bonding. Most of those flashy findings fell apart when other labs tried to repeat them. So it is two things at once: an obstetric workhorse and a pop-psychology celebrity whose fame outran the evidence.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be185d22"/><path d="M6 30c5-12 9-16 12-16s7 8 12 8 7-4 12-8" fill="none" stroke="#be185d" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Acetate</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The salt form: oxytocin manufactured with acetate as the counter-ion for stability. Same active molecule.</p>
-      <p class="gex"><span class="gslabel">Example</span>Why the title says “oxytocin acetate”.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The packaging the molecule ships in — not a different drug.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be185d22"/><path d="M6 30c5-12 9-16 12-16s7 8 12 8 7-4 12-8" fill="none" stroke="#188bbe" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Acetate</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>In the context of oxytocin, acetate refers to the counter-ion paired with the peptide in manufactured formulations — oxytocin acetate. Peptides are often made and stabilized as salts, and acetate is a common, biologically quiet partner that helps the powder stay stable and dissolve properly. It contributes nothing to the drug's effect; the active molecule is identical to oxytocin in any other salt form. Seeing "acetate" on a label describes the packaging of the molecule, not a different drug. It is formulation chemistry, not pharmacology.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Acetate here is just the salt the manufactured hormone is paired with — oxytocin acetate. Peptides are usually made as salts to keep them stable and dissolvable, and acetate is a common, harmless partner. It does nothing in the body; the working molecule is the same oxytocin either way. So "acetate" on a label is about how the drug is packaged, not a different drug. Do not let the extra word confuse you.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#83184322"/><path d="M8 24h28M28 14l10 10-10 10" fill="none" stroke="#831843" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Pitocin</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Brand name of synthetic oxytocin for obstetric use: labor induction/augmentation and postpartum hemorrhage control.</p>
-      <p class="gex"><span class="gslabel">Example</span>Oxytocin in the delivery room.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The hospital version — one of childbirth’s most-used drugs.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#83184322"/><path d="M8 24h28M28 14l10 10-10 10" fill="none" stroke="#831827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Pitocin</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The brand name of synthetic oxytocin manufactured for obstetric use. It is given intravenously to induce or strengthen labor contractions, and after delivery to contract the uterus and control bleeding. It is one of the most frequently used drugs in maternity care worldwide, with decades of clinical experience behind it. Because it is delivered into the bloodstream, it acts on the uterus and breast — it does not meaningfully reach the brain, which limits its effects to the body. Its record is one of proven, life-saving utility, in sharp contrast to the speculative uses of nasal oxytocin.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Pitocin is the hospital brand name for synthetic oxytocin, and it is one of the most-used drugs in childbirth. It goes into an IV to start or strengthen labor, and after birth it clamps the uterus down to stop bleeding. Because it travels in the blood, it works on the uterus and breast — it does not reach the brain in any meaningful amount. Decades of use have made it a proven, life-saving medicine. That solid record is very different from the hype around oxytocin nasal sprays.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbcfe822"/><path d="M24 6l14 6v10c0 9-6 15-14 18-8-3-14-9-14-18V12z" fill="none" stroke="#fbcfe8" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Nonapeptide</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A 9-amino-acid peptide. Oxytocin and vasopressin are the famous nonapeptide pair.</p>
-      <p class="gex"><span class="gslabel">Example</span>What “9-aa” means.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A nine-bead chain — small enough to synthesize since 1953.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbcfe822"/><path d="M24 6l14 6v10c0 9-6 15-14 18-8-3-14-9-14-18V12z" fill="none" stroke="#fbcfd5" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Nonapeptide</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>A peptide exactly nine amino acids long — "nona" meaning nine. Oxytocin is the most famous nonapeptide, and its close relative vasopressin shares the same length, differing in only two of the nine positions. Both are small enough to have been chemically synthesized: oxytocin's 1953 synthesis was the first ever of a peptide hormone, earning the 1955 Nobel Prize in Chemistry. Their small size also explains why they can be made, studied, and sprayed with relative ease. The term simply describes the chain length, not any function.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>A nonapeptide is a peptide exactly nine amino acids long — nine beads on the chain. Oxytocin is the most famous one, and its cousin vasopressin is the same length, differing at just two spots. Being so small is why oxytocin could be built in a lab back in 1953 — the first peptide hormone ever synthesized, which won a Nobel Prize. The word only describes the size of the chain, nothing about what it does.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be185d22"/><path d="M24 6c8 10 12 16 12 22a12 12 0 0 1-24 0c0-6 4-12 12-22z" fill="none" stroke="#be185d" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Vasopressin</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Oxytocin’s sibling nonapeptide (2 aa different): water balance, blood pressure — and its own social portfolio.</p>
-      <p class="gex"><span class="gslabel">Example</span>The quiet sibling in chapter 5.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The fraternal twin — kidneys by day, vole romance by night.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be185d22"/><path d="M24 6c8 10 12 16 12 22a12 12 0 0 1-24 0c0-6 4-12 12-22z" fill="none" stroke="#188bbe" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Vasopressin</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Arginine vasopressin, the nonapeptide sibling of oxytocin, differing in just two of nine amino acids. It is best known as antidiuretic hormone: it tells the kidneys to conserve water and helps regulate blood pressure through vascular receptors. Like oxytocin it also acts in the brain, where research links it to social and pair-bonding behaviors in animals — famously in prairie voles. The two peptides likely arose from a duplicated ancestral gene, which explains their structural and functional overlap. They are often studied as a pair because what applies to one frequently informs the other.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Vasopressin is oxytocin's near-twin — same nine-bead length, only two beads different. Its day job is water balance: it tells the kidneys to hold onto water and helps keep blood pressure up. Like oxytocin, it also works in the brain, where animal studies famously tied it to pair-bonding in prairie voles. The two probably split from one ancient gene, which is why they look and partly act alike. Scientists usually study them as a pair, since each one sheds light on the other.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#83184322"/><path d="M6 24h8l4-10 6 20 4-10h14" fill="none" stroke="#831843" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Letdown</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Milk ejection reflex: oxytocin contracts breast myoepithelial cells, releasing milk during nursing.</p>
-      <p class="gex"><span class="gslabel">Example</span>Textbook oxytocin physiology.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The milk-release reflex every nursing parent knows.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#83184322"/><path d="M6 24h8l4-10 6 20 4-10h14" fill="none" stroke="#831827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Letdown</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The milk ejection reflex, the physiological process by which milk is released from the breast during nursing. When a baby suckles, sensory signals reach the hypothalamus, which releases oxytocin; the hormone then contracts the myoepithelial cells surrounding the milk-producing alveoli, squeezing milk into the ducts. Mothers often feel it as a tingling or tightening sensation, and it can also be triggered by a baby's cry or even by thinking about the baby. Stress and pain can inhibit the reflex by interfering with oxytocin release. It is one of oxytocin's two classic, undisputed functions, alongside uterine contraction.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Letdown is the milk-release reflex every nursing parent knows: the baby suckles, the brain releases oxytocin, and tiny muscle cells around the milk glands squeeze milk into the ducts. Many mothers feel it as a tingle or tightening, and it can even be triggered by hearing a baby cry. Stress and pain can block it by getting in the way of the oxytocin signal. Along with labor contractions, it is one of oxytocin's two classic jobs that nobody disputes.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbcfe822"/><path d="M18 6h12M20 6v12l-8 16h24l-8-16V6" fill="none" stroke="#fbcfe8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Postpartum hemorrhage</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Dangerous bleeding after birth — oxytocin contracts the uterus to clamp it down. A leading cause of maternal death worldwide.</p>
-      <p class="gex"><span class="gslabel">Example</span>Pitocin’s lifesaving job.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Bleeding after birth — where oxytocin saves lives daily.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbcfe822"/><path d="M18 6h12M20 6v12l-8 16h24l-8-16V6" fill="none" stroke="#fbcfd5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Postpartum hemorrhage</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Excessive bleeding after childbirth, usually defined as losing 500 mL or more of blood after a vaginal delivery. It is a leading cause of maternal death worldwide, most often because the uterus fails to contract firmly after the placenta separates — a condition called uterine atony. Oxytocin is the first-line treatment and prevention: by contracting the uterine muscle, it compresses the blood vessels at the placental site and clamps the bleeding down. Routine oxytocin after birth is one of the most evidence-backed interventions in obstetrics. In this setting, oxytocin is unambiguously a life-saving drug.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Postpartum hemorrhage is dangerous bleeding after birth — one of the top causes of mothers dying in childbirth worldwide. It usually happens because the uterus stays soft and floppy instead of clamping down after the placenta comes out. Oxytocin is the standard fix: it makes the uterus contract hard, squeezing the open blood vessels shut. Giving it routinely right after birth is one of the best-proven moves in all of obstetrics. This is oxytocin at its most serious — a drug that saves lives every day.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be185d22"/><path d="M10 8h12a6 6 0 0 1 6 6v22a6 6 0 0 0-6-6H10zM10 8v28" fill="none" stroke="#be185d" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Intranasal</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Delivered as a nasal spray, aiming (debatably) to reach the brain via olfactory routes.</p>
-      <p class="gex"><span class="gslabel">Example</span>The hype-era delivery method.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Up the nose, hoping to reach the brain — the debated shortcut.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be185d22"/><path d="M10 8h12a6 6 0 0 1 6 6v22a6 6 0 0 0-6-6H10zM10 8v28" fill="none" stroke="#188bbe" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Intranasal</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>Delivered through the nose, as a spray — the route used in nearly all studies of oxytocin's supposed social and cognitive effects. The idea is that the nasal route might bypass the blood-brain barrier via olfactory and trigeminal pathways, delivering the peptide toward the brain. Whether meaningful amounts actually reach the brain this way is hotly debated: oxytocin is rapidly degraded, and measured brain levels after spraying are inconsistent. This uncertainty undermines many headline findings, since a study cannot claim a brain effect if the drug never reached the brain. The intranasal route is the methodological fault line under the "love hormone" literature.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Intranasal means up the nose, as a spray — the route behind almost every study claiming oxytocin boosts trust, empathy, or bonding. The hope was that the nose offers a shortcut past the brain's protective barrier, via smell-related pathways. But whether any meaningful amount actually reaches the brain is fiercely debated, and measurements have been inconsistent. If the drug never got to the brain, the headline results are hard to trust. The nasal spray is the shaky foundation under most of the "love hormone" science.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#83184322"/><path d="M24 8l4.5 9.5 10.5 1.5-7.5 7.5 1.8 10.5-9.3-5-9.3 5 1.8-10.5-7.5-7.5 10.5-1.5z" fill="none" stroke="#831843" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Replication crisis</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The reckoning when big, careful re-runs of famous findings come up empty — oxytocin social effects included.</p>
-      <p class="gex"><span class="gslabel">Example</span>What deflated the trust-spray story.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Science’s “wait, try that again” moment — and oxytocin didn’t survive it.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#83184322"/><path d="M24 8l4.5 9.5 10.5 1.5-7.5 7.5 1.8 10.5-9.3-5-9.3 5 1.8-10.5-7.5-7.5 10.5-1.5z" fill="none" stroke="#831827" stroke-width="2.5" stroke-linejoin="round"/></svg><span class="term">Replication crisis</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The period, beginning in the 2010s, when large, careful attempts to repeat famous psychology and social-science findings repeatedly came up empty. Oxytocin research became an emblem of the crisis: early small studies reporting that nasal oxytocin increased trust, generosity, or mind-reading mostly failed when re-run with bigger samples and preregistered methods. The episode revealed how small samples, flexible analysis, and publication bias can manufacture exciting but false results. It does not mean oxytocin does nothing in the brain — it means the boldest claims lacked a foundation. The crisis pushed the field toward larger studies and more modest claims.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>The replication crisis was science's "wait, try that again" moment in the 2010s, when big, careful re-runs of famous findings kept coming up empty. Oxytocin was one of the poster children: the early small studies saying a nasal spray boosts trust or mind-reading mostly collapsed under bigger, stricter repeats. The lesson was that tiny studies plus flexible statistics can manufacture exciting results that are not real. It does not prove oxytocin does nothing — it proves the boldest claims were built on sand. The field has since moved toward larger studies and humbler conclusions.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbcfe822"/><circle cx="16" cy="24" r="7" fill="none" stroke="#fbcfe8" stroke-width="2.5"/><circle cx="32" cy="24" r="7" fill="none" stroke="#fbcfe8" stroke-width="2.5"/></svg><span class="term">Salience</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>How much something grabs attention. The surviving theory: oxytocin turns up social salience — good or bad.</p>
-      <p class="gex"><span class="gslabel">Example</span>The nuance that replaced “bonding”.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The volume knob — not the song.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#fbcfe822"/><circle cx="16" cy="24" r="7" fill="none" stroke="#fbcfd5" stroke-width="2.5"/><circle cx="32" cy="24" r="7" fill="none" stroke="#fbcfd5" stroke-width="2.5"/></svg><span class="term">Salience</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>In neuroscience, salience is the property of a stimulus that makes it stand out and grab attention — the difference between background noise and a signal worth noticing. The most durable theory of oxytocin's brain effects is the social salience hypothesis: that oxytocin amplifies the salience of social cues, making them more noticeable and more intensely processed. Crucially, this cuts both ways — it could heighten warmth toward allies and hostility toward outsiders, depending on context. This framework replaced the simpler "love hormone" story with something more conditional and more consistent with the mixed data. It remains a hypothesis, not an established fact.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>Salience is just a fancy word for how much something grabs your attention — the difference between background noise and something you cannot ignore. The best surviving theory says oxytocin turns up the volume on social signals: faces, voices, and gestures hit harder. But a louder signal is not always a nicer one — the same boost could deepen warmth toward friends and suspicion toward strangers, depending on the situation. That replaced the simple "love hormone" story with something more complicated and more honest. It is still a theory, not a proven fact.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be185d22"/><path d="M6 24c4-8 10-12 18-12s14 4 18 12c-4 8-10 12-18 12S10 32 6 24z" fill="none" stroke="#be185d" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#be185d"/></svg><span class="term">Nobel 1955</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The Chemistry prize for the first-ever peptide synthesis — oxytocin, built amino acid by amino acid.</p>
-      <p class="gex"><span class="gslabel">Example</span>The history medal.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The gold star for proving hormones could be manufactured.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#be185d22"/><path d="M6 24c4-8 10-12 18-12s14 4 18 12c-4 8-10 12-18 12S10 32 6 24z" fill="none" stroke="#188bbe" stroke-width="2.5"/><circle cx="24" cy="24" r="5" fill="#188bbe"/></svg><span class="term">Nobel 1955</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The Nobel Prize in Chemistry awarded in 1955 to Vincent du Vigneaud for the first chemical synthesis of a peptide hormone — oxytocin, completed in 1953. Building the nine-amino-acid chain amino acid by amino acid proved that hormones were definable chemical structures that humans could manufacture, not mysterious vital fluids. The achievement opened the door to synthetic peptide drugs, from Pitocin to the entire modern peptide industry. It is why oxytocin holds a unique place in the history of biochemistry, beyond any of its biological effects. The prize recognized a method that changed medicine.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>The 1955 Nobel Prize in Chemistry went to Vincent du Vigneaud for building oxytocin in a lab — the first peptide hormone ever synthesized, completed in 1953. It proved hormones were ordinary chemicals with exact structures, not mysterious life forces, and that humans could manufacture them. That breakthrough opened the door to every synthetic peptide drug since, including Pitocin itself. So oxytocin's place in history goes beyond biology: it was the molecule that launched peptide medicine. The prize honored a method, and the method changed everything.</div>
     </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#83184322"/><path d="M24 6v34M14 40h20M10 14h28M16 14l-6 14h12zM32 14l-6 14h12z" fill="none" stroke="#831843" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Swift birth</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The Greek roots of “oxytocin” (oxys = swift, tokos = birth) — named for the labor effect.</p>
-      <p class="gex"><span class="gslabel">Example</span>The name’s origin story.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The name literally means “quick labor” — the branding was honest.</div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#83184322"/><path d="M24 6v34M14 40h20M10 14h28M16 14l-6 14h12zM32 14l-6 14h12z" fill="none" stroke="#831827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">Swift birth</span><span class="plus">+</span></button><div class="g-a">
+      <p class="gsci"><span class="gslabel">The science</span>The literal meaning of the word "oxytocin," coined from the Greek oxys (swift, sharp) and tokos (childbirth). The name was chosen for the hormone's most dramatic observed effect: accelerating uterine contractions during labor. It is a rare case of scientific nomenclature that doubles as an accurate product description. The name predates and outlasts the "love hormone" nickname, anchoring the molecule to its original, proven function. Etymology here is a reminder of what the evidence actually established first.</p>
+      
+      <div class="plain"><span class="plabel">Plain English</span>"Swift birth" is what the word oxytocin literally means — from the Greek for "quick" and "childbirth." The name was picked for the hormone's most dramatic effect: speeding up labor contractions. It is a rare scientific name that doubles as an honest description. The label came long before anyone called it the "love hormone," and it points back to the job the evidence actually proved. Sometimes the name tells you what the hype forgot.</div>
     </div></div>
   </div>
 </section>
-<section class="chapter" id="ch9">
-  <span class="eyebrow"><span class="n">09</span>Takeaways</span>
+<mini-poll slug="oxytocin-mini-ch10"
+  data-question="Which oxytocin term will you actually remember?"
+  data-answers='[["🧠", "Posterior pituitary"], ["💞", "Oxytocin receptor"], ["👶", "Let-down reflex"], ["🧬", "Nonapeptide"]]'>
+</mini-poll>
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Nine chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
+  <p class="lede">Eleven chapters, distilled. What the molecule is, what the evidence says, and what would have to change.</p>
   <div class="take-grid">
 <div class="take reveal"><div class="tk">🧬</div><h4>Acetate = salt form</h4><p>“Oxytocin acetate” is <strong>synthetic oxytocin</strong> manufactured as an acetate salt — same molecule, stable powder.</p></div>
 <div class="take reveal"><div class="tk">🏆</div><h4>First peptide synthesized</h4><p>Built amino acid by amino acid in <strong>1953</strong>; Nobel Prize 1955 — the <strong>proof of concept for all peptide drugs</strong>.</p></div>
@@ -841,7 +1117,8 @@ mini-poll { display: block; }
     </ul>
   </div>
 </section>
-<mini-poll slug="oxytocin-mini-ch8"
+<h3 class="ratehead"><span class="star">⭐</span> How would you rate this infographic?</h3>
+<mini-poll slug="oxytocin-mini-ch11"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "⭐⭐⭐⭐⭐ · Loved it"], ["🙂", "⭐⭐⭐⭐ · Good stuff"], ["😐", "⭐⭐⭐ · It’s okay"]]'>
 </mini-poll>
@@ -885,7 +1162,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#fbcfe8","#be185d","#831843","#fbcfe8","#be185d","#fbcfe8"];
+  var colors=["#fbcfd5","#188bbe","#831827","#fbcfd5","#188bbe","#fbcfd5"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -922,6 +1199,7 @@ var io=new IntersectionObserver(function(es){
   es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});
 },{threshold:0.12,rootMargin:"0px 0px -6% 0px"});
 document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+if(reduced){document.querySelectorAll("svg").forEach(function(s){try{if(s.pauseAnimations)s.pauseAnimations();}catch(e){}});}
 /* ---------- count-up stats ---------- */
 var cio=new IntersectionObserver(function(es){
   es.forEach(function(e){
@@ -969,7 +1247,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -1012,7 +1290,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#fbcfe8","#fbcfe8","#be185d","#fbbf24","#edf0f9"],parts=[];
+  var cols=["#fbcfd5","#fbcfd5","#188bbe","#f92644","#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -1048,12 +1326,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#fbcfe8", "#be185d", "#831843", "#762040", "#e52779", "#97365a", "#fde4f2", "#55102c", "#be185d"] };
+  accents: ["#fbcfd5", "#188bbe", "#831827", "#76202c", "#27abe5", "#973644", "#fde4e8", "#55101a", "#188bbe"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="reta-mini-ch1"
+     <mini-poll slug="oxytocin-mini-recap"
        data-question="Had you heard of this topic before today?"
        data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
      </mini-poll>
@@ -1132,8 +1410,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fbcfe8', '#fbcfe8', '#be185d', '#a78bfa', '#fbcfe8',
-                 '#fbcfe8', '#fbbf24', '#f65d73', '#22d3ee'];
+                ['#fbcfd5', '#fbcfd5', '#188bbe', '#a78bfa', '#fbcfd5',
+                 '#fbcfd5', '#f92644', '#5dc7f6', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
